@@ -12,12 +12,8 @@ import Footer from "./components/Footer";
 function App() {
   return (
     <BrowserRouter>
-      <nav>
-        <Link to="/">Home</Link>
-        <Link to="/signin">Sign In</Link>
-        <Link to="/signup">Sign Up</Link>
-      </nav>
       <Header />
+
       <Switch>
         <Route path="/" exact component={Home} />
         <Route path="/signin" component={Signin} />
